@@ -14,5 +14,5 @@ paths=(
 
 for path in ${paths[@]}; do
     echo $path
-    cd $path $gitFull && git pull && git add . && git commit -m "$commitMessage" && git push
+    cd $path $gitFull && git pull && git add . && git commit -m "$path" && git push
 done
