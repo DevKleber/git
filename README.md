@@ -21,4 +21,4 @@ Synchronizing my **settings** and **programs**
 ```sh
 * */5 * * * ~/shellscripts/git/git.sh
 ```
-teste
+
