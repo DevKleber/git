@@ -2,7 +2,6 @@
 
 Synchronizing my **settings** and **programs**
 
-  
 
 ## Path on pc
 
@@ -22,3 +21,8 @@ Synchronizing my **settings** and **programs**
 * */5 * * * ~/shellscripts/git/git.sh
 ```
 
+```sh 
+git remote add origin url
+git pull origin master --allow-unrelated-histories
+git branch --set-upstream-to origin/master
+```
