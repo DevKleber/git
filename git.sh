@@ -9,6 +9,7 @@ paths=(
     ~/.vscode/extensions
     ~/.config/Insomnia
     ~/shellscripts/git
+    ~/
 )
 
 for path in ${paths[@]}; do
