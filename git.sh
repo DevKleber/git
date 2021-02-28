@@ -8,6 +8,7 @@ paths=(
     ~/.config/Code/User
     ~/.vscode/extensions
     ~/.config/Insomnia
+    ~/.config/ulauncher
     ~/shellscripts/git
     ~/
 )
