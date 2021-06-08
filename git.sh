@@ -9,6 +9,7 @@ paths=(
     ~/.vscode/extensions
     ~/.config/Insomnia
     ~/.config/ulauncher
+    ~/atalhos
     ~/shellscripts/git
     ~/
 )
