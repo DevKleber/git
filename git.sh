@@ -2,7 +2,7 @@
 source $(dirname $0)/credentials.sh
 
 commitMessage="Crontab $USER"
-
+#sudo chmod 777 -R /etc/apache2/sites-available/.git
 paths=(
     ~/Pictures/wallpapers/wallpapers/paisagens
     ~/.config/Code/User
