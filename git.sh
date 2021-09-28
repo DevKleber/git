@@ -11,6 +11,7 @@ paths=(
     ~/.config/ulauncher
     ~/atalhos
     ~/shellscripts/git
+    /etc/apache2/sites-available
     ~/
 )
 
