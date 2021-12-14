@@ -13,11 +13,17 @@ paths=(
     ~/atalhos
     ~/shellscripts/git
     ~/shellscripts/DotFiles
+    ~/shellscripts/pc-.zshrc
     /etc/apache2/sites-available
     ~/
 )
 
 for path in ${paths[@]}; do
     echo $path
+    if [ "$path" = ~/shellscripts/pc-.zshrc ]; then
+        echo "run script"
+        $path/run.sh
+    fi
+
     cd $path && git pull && git add . && git commit -m "$commitMessage" && git push
 done
