@@ -14,6 +14,7 @@ paths=(
     ~/shellscripts/git
     ~/shellscripts/DotFiles
     ~/shellscripts/pc-.zshrc
+    ~/.local/share/nautilus/scripts
     /etc/apache2/sites-available
     ~/
 )
