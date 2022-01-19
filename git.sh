@@ -10,6 +10,7 @@ paths=(
     ~/.vscode/extensions
     ~/.config/Insomnia
     ~/.config/ulauncher
+    ~/.local/share/DBeaverData
     ~/atalhos
     ~/shellscripts/git
     ~/shellscripts/DotFiles
