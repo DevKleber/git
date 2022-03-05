@@ -28,10 +28,11 @@ for path in ${paths[@]}; do
         $path/run.sh
     fi
 
+    echo "**************$path**************\\n"
     cd $path && git add . && git commit -m "$commitMessage" && git pull && git push
     
-    echo "Resolvendo conflitos aceitando sempre as entradas\n"
+    echo "Resolvendo conflitos aceitando sempre as entradas\\n"
     cd $path && git checkout --theirs . && git add . && git commit -m "$commitMessage" && git pull && git push
-    echo "\n-------------------------------------------------------------------------------------------------\n"
+    echo "\\n-------------------------------------------------------------------------------------------------\\n"
 
 done
