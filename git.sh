@@ -29,7 +29,9 @@ for path in ${paths[@]}; do
     fi
 
     cd $path && git add . && git commit -m "$commitMessage" && git pull && git push
-    # Git : accept all incoming changes
+    
+    echo "Resolvendo conflitos aceitando sempre as entradas\n"
     cd $path && git checkout --theirs . && git add . && git commit -m "$commitMessage" && git pull && git push
+    echo "\n-------------------------------------------------------------------------------------------------\n"
 
 done
