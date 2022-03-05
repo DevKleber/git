@@ -22,7 +22,8 @@ paths=(
 )
 
 for path in ${paths[@]}; do
-    echo "**************$path**************\\n"
+    
+    printf "**************$path**************\\n"
     if [ "$path" = ~/shellscripts/pc-.zshrc ]; then
         echo "run script"
         $path/run.sh
@@ -30,8 +31,8 @@ for path in ${paths[@]}; do
 
     cd $path && git add . && git commit -m "$commitMessage" && git pull && git push
     
-    echo "Resolvendo conflitos aceitando sempre as entradas\\n"
+    printf "Resolvendo conflitos aceitando sempre as entradas\\n"
     cd $path && git checkout --theirs . && git add . && git commit -m "$commitMessage" && git pull && git push
-    echo "\\n-------------------------------------------------------------------------------------------------\\n"
+    printf "\\n-------------------------------------------------------------------------------------------------\\n"
 
 done
