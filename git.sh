@@ -31,7 +31,7 @@ for path in ${paths[@]}; do
 
     cd $path && git add . && git commit -m "$commitMessage" && git pull && git push
     
-    printf "********** Resolvendo conflitos aceitando sempre as entradas **********\\n"
+    printf "\\n\\n********** Resolvendo conflitos aceitando sempre as entradas **********\\n"
     cd $path && git checkout --theirs . && git add . && git commit -m "$commitMessage" && git pull && git push
     printf "\\n-------------------------------------------------------------------------------------------------\\n"
 
