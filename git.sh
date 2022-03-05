@@ -22,13 +22,12 @@ paths=(
 )
 
 for path in ${paths[@]}; do
-    echo $path
+    echo "**************$path**************\\n"
     if [ "$path" = ~/shellscripts/pc-.zshrc ]; then
         echo "run script"
         $path/run.sh
     fi
 
-    echo "**************$path**************\\n"
     cd $path && git add . && git commit -m "$commitMessage" && git pull && git push
     
     echo "Resolvendo conflitos aceitando sempre as entradas\\n"
