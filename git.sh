@@ -29,4 +29,7 @@ for path in ${paths[@]}; do
     fi
 
     cd $path && git add . && git commit -m "$commitMessage" && git pull && git push
+    # Git : accept all incoming changes
+    cd $path && git checkout --theirs . && git add . && git commit -m "$commitMessage" && git pull && git push
+
 done
