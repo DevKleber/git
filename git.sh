@@ -28,5 +28,5 @@ for path in ${paths[@]}; do
         $path/run.sh
     fi
 
-    cd $path && git pull && git add . && git commit -m "$commitMessage" && git push
+    cd $path && git add . && git commit -m "$commitMessage" && git pull && git push
 done
