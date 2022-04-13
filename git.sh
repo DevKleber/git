@@ -22,7 +22,7 @@ paths=(
 )
 
 for path in ${paths[@]}; do
-    clear
+    #clear
     printf "**************************** $path ****************************\\n\\n"
     if [ "$path" = ~/shellscripts/pc-.zshrc ]; then
         echo "run script"
