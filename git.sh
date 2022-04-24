@@ -17,6 +17,7 @@ paths=(
     ~/shellscripts/pc-.zshrc
     ~/shellscripts/scriptsToRun
     ~/.local/share/nautilus/scripts
+    ~/vpns
     /etc/apache2/sites-available
     ~/
 )
