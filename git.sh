@@ -19,6 +19,7 @@ paths=(
     ~/.local/share/nautilus/scripts
     ~/vpns
     ~/shellscripts/changeWallpaper
+    ~/shellscripts/slackbot
 )
 
 for path in ${paths[@]}; do
