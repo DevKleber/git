@@ -15,6 +15,7 @@ paths=(
     ~/shellscripts/git
     ~/shellscripts/DotFiles
     ~/shellscripts/pc-.zshrc
+    ~/shellscripts/gitconfig
     ~/shellscripts/scriptsToRun
     ~/.local/share/nautilus/scripts
     ~/vpns
