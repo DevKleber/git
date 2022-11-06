@@ -27,11 +27,16 @@ runScripts=(
     ~/shellscripts/scriptsToRun/gitconfig/run.sh
 )
 
+
+printf "****************** Rodando scripts ******************\\n\\n"
 for scrip in ${runScripts[@]}; do
-    printf "**************************** $path ****************************\\n\\n"
     $scrip
     printf "\\n---------------------------------------------------------------\\n"
 done
+printf "****************** Fim Rodando scripts ******************\\n\\n"
+
+
+
 
 for path in ${paths[@]}; do
     #clear
