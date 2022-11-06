@@ -23,6 +23,16 @@ paths=(
     ~/shellscripts/slackbot
 )
 
+runScripts=(
+    ~/shellscripts/scriptsToRun/gitconfig/run.sh
+)
+
+for scrip in ${runScripts[@]}; do
+    printf "**************************** $path ****************************\\n\\n"
+    $scrip
+    printf "\\n---------------------------------------------------------------\\n"
+done
+
 for path in ${paths[@]}; do
     #clear
     printf "**************************** $path ****************************\\n\\n"
