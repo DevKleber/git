@@ -14,14 +14,14 @@ paths=(
     ~/atalhos
     ~/shellscripts/git
     ~/shellscripts/DotFiles
-    ~/shellscripts/pc-.zshrc
+    # ~/shellscripts/pc-.zshrc
     ~/shellscripts/gitconfig
     ~/shellscripts/scriptsToRun
     ~/.local/share/nautilus/scripts
-    ~/vpns
+    # ~/vpns
     ~/shellscripts/changeWallpaper
-    /var/www/html/nginx
-    ~/shellscripts/slackbot
+    # /var/www/html/nginx
+    # ~/shellscripts/slackbot
 )
 
 runScripts=(
@@ -51,6 +51,16 @@ for path in ${paths[@]}; do
     
     printf "\\n\\n********** Resolvendo conflitos aceitando sempre as entradas **********\\n"
     cd $path && git checkout --theirs . && git pull && git add . && git commit -m "$commitMessage" && git pull && git push
+    
+    # Se você está no meio de um merge e quer abortá-lo para começar de novo, você pode usar:
+    # git merge --abort
+    
+    # Faça um pull com a estratégia ours para manter todas as suas alterações locais e não trazer nenhuma alteração remota para os arquivos que estão em conflito:
+    # git pull -s ours
+    
+    # Se você deseja usar a versão remota em vez da local, use a estratégia theirs:
+    # git pull -s theirs
+
     printf "\\n-------------------------------------------------------------------------------------------------\\n"
 
 done
