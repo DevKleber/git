@@ -6,9 +6,9 @@ commitMessage="Crontab $USER"
 
 paths=(
     ~/Pictures/wallpapers/wallpapers/paisagens
-    ~/.config/Code/User
-    ~/.vscode/extensions
-    ~/.config/Insomnia
+    # ~/.config/Code/User
+    # ~/.vscode/extensions
+    # ~/.config/Insomnia
     ~/.config/ulauncher
     ~/.local/share/DBeaverData
     ~/atalhos
@@ -17,7 +17,7 @@ paths=(
     # ~/shellscripts/pc-.zshrc
     ~/shellscripts/gitconfig
     ~/shellscripts/scriptsToRun
-    ~/.local/share/nautilus/scripts
+    # ~/.local/share/nautilus/scripts # não lembro o que é
     # ~/vpns
     ~/shellscripts/changeWallpaper
     # /var/www/html/nginx
