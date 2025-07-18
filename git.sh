@@ -20,7 +20,7 @@ paths=(
     # ~/.local/share/nautilus/scripts # não lembro o que é
     # ~/vpns
     ~/shellscripts/changeWallpaper
-    ~/ssh
+    ~/.ssh
     # /var/www/html/nginx
     # ~/shellscripts/slackbot
 )
